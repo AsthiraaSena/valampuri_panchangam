@@ -1,0 +1,572 @@
+[
+ {
+   "planet": "சூரி",
+   "star": "மகரம்",
+   "datetime": "14.01.2026  14:50:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சூரி",
+   "star": "கும்பம்",
+   "datetime": "13.02.2026  03:51:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சூரி",
+   "star": "மீனம்",
+   "datetime": "15.03.2026  00:45:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சூரி",
+   "star": "மேஷம்",
+   "datetime": "14.04.2026  09:15:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சூரி",
+   "star": "ரிஷபம்",
+   "datetime": "15.05.2026  06:04:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சூரி",
+   "star": "மிதுனம்",
+   "datetime": "15.06.2026  12:34:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சூரி",
+   "star": "கடகம்",
+   "datetime": "16.07.2026  23:19:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சூரி",
+   "star": "சிம்மம்",
+   "datetime": "17.08.2026  07:39:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சூரி",
+   "star": "கன்னி",
+   "datetime": "17.09.2026  07:33:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சூரி",
+   "star": "துலாம்",
+   "datetime": "17.10.2026  19:33:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சூரி",
+   "star": "விருச்சிகம்",
+   "datetime": "16.11.2026  19:24:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சூரி",
+   "star": "தனுசு",
+   "datetime": "16.12.2026  10:06:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "",
+   "star": "",
+   "datetime": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "",
+   "star": "",
+   "datetime": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "செவ்",
+   "star": "மகரம்",
+   "datetime": "16.01.2026  04:05:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "செவ்",
+   "star": "கும்பம்",
+   "datetime": "23.02.2026  11:27:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "செவ்",
+   "star": "மீனம்",
+   "datetime": "02.04.2026  15:07:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "செவ்",
+   "star": "மேஷம்",
+   "datetime": "11.05.2026  12:15:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "செவ்",
+   "star": "ரிஷபம்",
+   "datetime": "20.06.2026  23:34:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "செவ்",
+   "star": "மிதுனம்",
+   "datetime": "02.08.2026  22:23:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "செவ்",
+   "star": "கடகம்",
+   "datetime": "18.09.2026  16:04:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "செவ்",
+   "star": "சிம்மம்",
+   "datetime": "12.11.2026  19:37:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "",
+   "star": "",
+   "datetime": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "மகரம்",
+   "datetime": "17.01.2026  10:13:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "கும்பம்",
+   "datetime": "03.02.2026  21:42:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "மீனம்",
+   "datetime": "11.04.2026  01:02:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "மேஷம்",
+   "datetime": "30.04.2026  06:43:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "ரிஷபம்",
+   "datetime": "15.05.2026  00:24:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "மிதுனம்",
+   "datetime": "29.05.2026  11:02:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "கடகம்",
+   "datetime": "22.06.2026  14:56:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "மிதுனம்",
+   "datetime": "07.07.2026  11:25:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "கடகம்",
+   "datetime": "05.08.2026  19:39:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "சிம்மம்",
+   "datetime": "22.08.2026  19:22:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "கன்னி",
+   "datetime": "07.09.2026  13:22:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "துலாம்",
+   "datetime": "26.09.2026  12:25:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "விருச்சிகம்",
+   "datetime": "02.12.2026  17:15:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "புத",
+   "star": "தனுசு",
+   "datetime": "22.12.2026  07:27:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "",
+   "star": "",
+   "datetime": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "குரு",
+   "star": "கடகம்",
+   "datetime": "02.06.2026  00:13:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "குரு",
+   "star": "சிம்மம்",
+   "datetime": "31.10.2026  09:26:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "",
+   "star": "",
+   "datetime": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "மகரம்",
+   "datetime": "13.01.2026  03:44:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "கும்பம்",
+   "datetime": "06.02.2026  00:57:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "மீனம்",
+   "datetime": "02.03.2026  00:42:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "மேஷம்",
+   "datetime": "26.03.2026  04:55:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "ரிஷபம்",
+   "datetime": "19.04.2026  15:33:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "மிதுனம்",
+   "datetime": "14.05.2026  10:39:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "கடகம்",
+   "datetime": "08.06.2026  17:27:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "சிம்மம்",
+   "datetime": "04.07.2026  18:57:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "கன்னி",
+   "datetime": "01.08.2026  09:10:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "துலாம்",
+   "datetime": "02.09.2026  13:20:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "கன்னி",
+   "datetime": "06.11.2026  02:03:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "சுக்",
+   "star": "துலாம்",
+   "datetime": "22.11.2026  16:20:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "",
+   "star": "",
+   "datetime": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "ராகு",
+   "star": "மகரம்",
+   "datetime": "25.11.2026  21:06:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "",
+   "star": "",
+   "datetime": "",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ },
+ {
+   "planet": "கேது",
+   "star": "கடகம்",
+   "datetime": "25.11.2026  21:06:00",
+   "FIELD4": "",
+   "FIELD5": "",
+   "FIELD6": "",
+   "FIELD7": "",
+   "FIELD8": ""
+ }
+]
