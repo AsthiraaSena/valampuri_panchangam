@@ -4,242 +4,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Guru | Valampuri Panchangam</title>
+    <title>Guru Parampara & 3-Generation Lineage | Astrologer Vallal Paari</title>
     <meta name="description"
-        content="Learn about the visionary behind the Bhaskara System, Prasanna Jothidamani Madurai Thilak.Ki.Baskaran.">
+        content="The 3-generation astrological heritage of Valampuri Panchangam: Moola Guru Maguleeswaran Ayya (50 yrs experience), Astrologer Varatharaajan, and author Astrologer Vallal Paari.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Master CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Top Bar -->
+    <div class="top-invoc-bar">
+        <div class="container">
+            <div class="invoc-text">
+                <i class="fas fa-om"></i>
+                <span data-i18n="top_invoc">Om Gam Ganapataye Namaha • Moola Guru Maguleeswaran Ayya Thunai</span>
+            </div>
+            <div id="liveTimeTicker" style="font-size: 0.82rem; color: #ffeb3b;"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo">VALAMPURI <span>PANCHANGAM</span></div>
+            <a href="index.html" class="brand-container">
+                <div class="brand-logo-icon">
+                    <i class="fas fa-dharmachakra"></i>
+                </div>
+                <div class="logo-text-wrap">
+                    <div class="logo-title">VALAMPURI <span>PANCHANGAM</span></div>
+                    <div class="logo-subtitle" data-i18n="brand_subtitle">Chithode Navagraha Aaraaichiyaalar Sangam</div>
+                </div>
+            </a>
+
             <ul class="nav-links">
-                <li><a href="index.html#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
                 <li><a href="panchangam.html" data-i18n="nav_panchangam">Daily Panchangam</a></li>
                 <li><a href="tools.html" data-i18n="nav_tools">Planetary Tools</a></li>
-                <li><a href="guru.html" class="active" data-i18n="nav_guru">About Guru</a></li>
-                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="guru.html" class="active" data-i18n="nav_guru">Guru Parampara</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About Sangam</a></li>
                 <li>
-                    <div class="lang-toggle" id="langToggle">
+                    <div class="lang-toggle" id="langToggle" title="Switch Language / மொழியை மாற்றுக">
                         <span class="lang-opt" data-lang="en">EN</span>
                         <span class="lang-opt" data-lang="ta">தமிழ்</span>
                         <div class="lang-slider"></div>
                     </div>
                 </li>
             </ul>
+
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
         </nav>
     </header>
 
     <main>
-        <section class="tools-hero">
-            <div class="container hero-content">
-                <span class="badge" data-i18n="guru_badge">The Visionary Master</span>
-                <h1 data-i18n="guru_hero_title">Prasanna Jothidamani <span class="highlight">Baskaran</span></h1>
-                <p data-i18n="guru_hero_desc">Founder of the Bhaskara System and a revolutionary in the field of modern
-                    astrology.</p>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="badge-sacred">
+                    <i class="fas fa-award"></i>
+                    மூன்று தலைமுறை ஜோதிட பாரம்பரியம்
+                </div>
+                <h1>Guru Parampara & <span class="highlight">Generational Heritage</span></h1>
+                <p>Moola Guru Maguleeswaran Ayya (50+ Years Experience) ➔ Astrologer Varatharaajan ➔ Panchangam Author Vallal Paari</p>
             </div>
         </section>
 
-        <section class="about reveal" style="background: #fff; padding: 80px 0;">
-            <div class="container about-flex">
-                <div class="about-text">
-                    <h2 data-i18n="guru_bio_title">Life & Contributions</h2>
-                    <p data-i18n="guru_bio_desc">Prasanna Jothidamani Madurai Thilak.Ki.Baskaran is the pioneering
-                        force behind the Bhaskara System of Astrology. Throughout his life, he has dedicated himself to
-                        refining the principles of Vedic wisdom with contemporary mathematical accuracy.</p>
-                    <div class="guru-points" style="margin-top: 2rem;">
-                        <ul class="check-list">
-                            <li><i class="fas fa-certificate"></i> <span data-i18n="guru_point1">Developer of the
-                                    Baskara System (Kusuma Bhaskara System)</span></li>
-                            <li><i class="fas fa-certificate"></i> <span data-i18n="guru_point2">Simplifying complex
-                                    planetary calculations for the common seeker</span></li>
-                            <li><i class="fas fa-certificate"></i> <span data-i18n="guru_point3">Renowned expert in
-                                    Prasanna (Horary) Astrology</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-glass"
-                        style="height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, var(--primary), var(--primary-dark));">
-                        <i class="fas fa-hands-praying"
-                            style="font-size: 5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
-                        <span style="color: white; font-weight: bold; font-family: 'Outfit';">Spiritual Legacy</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="reveal" style="padding: 80px 0; background: var(--bg-main);">
+        <!-- 3 Generations Timeline Cards -->
+        <section class="angas-section reveal" style="background: #fbf9f5; padding: 70px 0;">
             <div class="container">
                 <div class="section-header">
-                    <h2 data-i18n="guru_philosophy_title">Spiritual Philosophy</h2>
-                    <p data-i18n="guru_philosophy_desc">His teachings bridge the gap between spiritual intuition and
-                        logical deduction, enabling practitioners to achieve success through divine timing.</p>
+                    <div class="badge-sacred" style="background: rgba(143, 23, 39, 0.1); color: var(--primary-crimson); border-color: rgba(143, 23, 39, 0.3);">
+                        <i class="fas fa-landmark"></i>
+                        The 3 Generations of Astrological Mastery
+                    </div>
+                    <h2>மூன்று தலைமுறை ஜோதிட வரலாறு</h2>
+                    <p>Over half a century of unbroken Vedic calculation, research, and benevolent community guidance.</p>
+                    <div class="section-divider"></div>
                 </div>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3 data-i18n="guru_teaching1_title">Enlightenment</h3>
-                        <p data-i18n="guru_teaching1_desc">Focusing on personal growth through planetary alignment.</p>
+
+                <div class="angas-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                    <!-- Generation 1 -->
+                    <div class="anga-card" style="border-top: 4px solid var(--gold-bright);">
+                        <div class="anga-icon-wrap" style="background: var(--maroon-gradient);">
+                            <i class="fas fa-hands-praying"></i>
+                        </div>
+                        <span class="badge-sacred" style="font-size: 0.76rem; margin-bottom: 10px;">1st Generation • மூல குரு</span>
+                        <h3>மகீலீஷ்வரன் அய்யா</h3>
+                        <p style="font-weight: 700; color: var(--primary-crimson); margin-bottom: 8px;">Moola Guru Maguleeswaran Ayya</p>
+                        <p>50 ஆண்டு காலத்திற்கும் மேலான ஜோதிட அனுபவம் கொண்ட மூல பிதா. பல்லாயிரக்கணக்கான ஜாதகங்களை ஆராய்ந்து ஜோதிட சாஸ்திரத்தின் மூல விதிகளையும் நவகிரக ரகசியங்களையும் கற்றுத் தந்த ஆசான்.</p>
                     </div>
-                    <div class="feature-card">
-                        <i class="fas fa-compass"></i>
-                        <h3 data-i18n="guru_teaching2_title">Precision</h3>
-                        <p data-i18n="guru_teaching2_desc">The Bhaskara System ensures accuracy in every prediction.</p>
+
+                    <!-- Generation 2 -->
+                    <div class="anga-card" style="border-top: 4px solid var(--primary-crimson);">
+                        <div class="anga-icon-wrap" style="background: linear-gradient(135deg, #8f1727, #4a0912);">
+                            <i class="fas fa-scroll"></i>
+                        </div>
+                        <span class="badge-sacred" style="font-size: 0.76rem; margin-bottom: 10px;">2nd Generation • இரண்டாம் தலைமுறை</span>
+                        <h3>ஜோதிடர் வரதராஜன்</h3>
+                        <p style="font-weight: 700; color: var(--primary-crimson); margin-bottom: 8px;">Astrologer Varatharaajan</p>
+                        <p>மகீலீஷ்வரன் அய்யா அவர்களின் மருமகன். மூல குருவின் பாரம்பரிய ஞானத்தை உள்வாங்கி, ஜோதிட ஆராய்ச்சியை அடுத்த கட்டத்திற்கு கொண்டு சென்று சங்கத்தின் தூணாக விளங்கியவர்.</p>
                     </div>
-                    <div class="feature-card">
-                        <i class="fas fa-heart"></i>
-                        <h3 data-i18n="guru_teaching3_title">Universal Good</h3>
-                        <p data-i18n="guru_teaching3_desc">Using astrology as a tool for the betterment of all humanity.
+
+                    <!-- Generation 3 -->
+                    <div class="anga-card" style="border-top: 4px solid #1e8e3e;">
+                        <div class="anga-icon-wrap" style="background: linear-gradient(135deg, #1e8e3e, #0d5322);">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <span class="badge-sacred" style="font-size: 0.76rem; margin-bottom: 10px;">3rd Generation • மூன்றாம் தலைமுறை</span>
+                        <h3>ஜோதிடர் வள்ளல் பாரி</h3>
+                        <p style="font-weight: 700; color: #1e8e3e; margin-bottom: 8px;">Astrologer Vallal Paari</p>
+                        <p>மகீலீஷ்வரன் அய்யா அவர்களின் பேரன் & வரதராஜன் அவர்களின் மகன். 'வலம்புரி பஞ்சாங்கம்' தொகுத்து, 'சித்தோடு நவகிரக ஆராய்ச்சியாளர் சங்கம்' வழிநடத்தி நவீன காலகட்டத்திற்கு ஜோதிட சேவையை வழங்கி வருகிறார்.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Biography Section -->
+        <section class="guru-section reveal" style="padding: 70px 0;">
+            <div class="container">
+                <div class="guru-grid">
+                    <div class="guru-portrait-wrap">
+                        <div class="guru-portrait-card">
+                            <img src="guru-portrait.jpg" alt="Astrologer Vallal Paari & Maguleeswaran Ayya Heritage">
+                        </div>
+                    </div>
+
+                    <div class="guru-info">
+                        <div class="badge-sacred" style="background: rgba(143, 23, 39, 0.1); color: var(--primary-crimson); border-color: rgba(143, 23, 39, 0.3);">
+                            <i class="fas fa-scroll"></i>
+                            Author & Sangam Heritage
+                        </div>
+                        <h2>ஜோதிடர் வள்ளல் பாரி அவர்களின் பணி</h2>
+                        <div class="guru-designation">ஆசிரியர்: வலம்புரி பஞ்சாங்கம் | தலைவர்: சித்தோடு நவகிரக ஆராய்ச்சியாளர் சங்கம்</div>
+                        <p class="guru-bio-text">
+                            ஈரோடு மாவட்டம் சித்தோடு திருத்தலத்தை மையமாகக் கொண்டு இயங்கும் <strong>சித்தோடு நவகிரக ஆராய்ச்சியாளர் சங்கம்</strong>, 50 ஆண்டுகால ஜோதிட அனுபவம் கொண்ட மூல குரு <strong>மகீலீஷ்வரன் அய்யா</strong> அவர்களின் வழிகாட்டுதலில் தோற்றுவிக்கப்பட்டது.
                         </p>
+                        <p class="guru-bio-text">
+                            குடும்பத்தின் மூன்றாம் தலைமுறை ஜோதிடராகிய <strong>வள்ளல் பாரி</strong> அவர்கள், பாரம்பரிய வேத ஜோதிட முறையையும் துல்லிய திருக்கணித பஞ்சாங்க அமைப்பையும் ஒன்றிணைத்து ஆண்டுதோறும் 'வலம்புரி பஞ்சாங்கம்' நூலை வெளியிட்டு வருகிறார்.
+                        </p>
+
+                        <div class="hero-cta-group">
+                            <a href="https://wa.me/919842100000?text=Vanakkam%20Astrologer%20Vallal%20Paari%20Ji,%20I%20would%20like%20to%20consult%20with%20you." target="_blank" class="btn-gold">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>Book Consultation with Vallal Paari</span>
+                            </a>
+                            <a href="#publications" class="btn-maroon">
+                                <i class="fas fa-book"></i>
+                                <span>View Panchangam Publications</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="book-showcase-section reveal">
+            <div class="container">
+                <div class="section-header" style="color: white;">
+                    <div class="badge-sacred">
+                        <i class="fas fa-feather-pointed"></i>
+                        Master Publications
+                    </div>
+                    <h2 style="color: white;">Publications by Astrologer Vallal Paari</h2>
+                    <p style="color: #cfd4ee;">Authentic Tamil Panchangams and astrological research works from Chithode Navagraha Aaraaichiyaalar Sangam.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="services-grid" style="margin-top: 40px;">
+                    <div class="service-card" style="background: rgba(16, 22, 48, 0.9); border-color: var(--cosmic-border); color: white;">
+                        <div class="service-icon"><i class="fas fa-book-journal-whills"></i></div>
+                        <h3 style="color: var(--gold-bright);">வலம்புரி தமிழ் பஞ்சாங்கம் 2026</h3>
+                        <p style="color: #cfd4ee;">Author: Astrologer Vallal Paari. Complete 365-day 5-Anga Drigganitha calculations, Subha Muhurtham schedules, and planetary transit guides.</p>
+                        <a href="https://wa.me/919842100000?text=Order%20Valampuri%20Panchangam%202026%20Edition" target="_blank" class="btn-gold" style="padding: 8px 18px; font-size: 0.86rem; align-self: flex-start;">
+                            <i class="fab fa-whatsapp"></i> Order Book (₹350)
+                        </a>
+                    </div>
+
+                    <div class="service-card" style="background: rgba(16, 22, 48, 0.9); border-color: var(--cosmic-border); color: white;">
+                        <div class="service-icon"><i class="fas fa-book"></i></div>
+                        <h3 style="color: var(--gold-bright);">நவகிரக தோஷ நிவர்த்தி சாஸ்திரம்</h3>
+                        <p style="color: #cfd4ee;">Curated remedies and temple pilgrimage guidelines formulated by Moola Guru Maguleeswaran Ayya and Chithode Navagraha Sangam.</p>
+                        <a href="https://wa.me/919842100000?text=Order%20Navagraha%20Dosha%20Pariharam%20Book" target="_blank" class="btn-gold" style="padding: 8px 18px; font-size: 0.86rem; align-self: flex-start;">
+                            <i class="fab fa-whatsapp"></i> Order Book (₹400)
+                        </a>
+                    </div>
+
+                    <div class="service-card" style="background: rgba(16, 22, 48, 0.9); border-color: var(--cosmic-border); color: white;">
+                        <div class="service-icon"><i class="fas fa-book-bookmark"></i></div>
+                        <h3 style="color: var(--gold-bright);">சுப முகூர்த்த காலக்கணிதம்</h3>
+                        <p style="color: #cfd4ee;">Practical guide for fixing auspicious wedding, housewarming, and business Muhurtham timings based on 50-year ancestral research.</p>
+                        <a href="https://wa.me/919842100000?text=Order%20Subha%20Muhurtham%20Guide" target="_blank" class="btn-gold" style="padding: 8px 18px; font-size: 0.86rem; align-self: flex-start;">
+                            <i class="fab fa-whatsapp"></i> Order Book (₹450)
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3 data-i18n="footer_brand">VALAMPURI</h3>
-                    <p data-i18n="footer_desc">Guiding your journey through the cosmic dance of time.</p>
+                    <h3>VALAMPURI <span>PANCHANGAM</span></h3>
+                    <p data-i18n="footer_about">Valampuri Panchangam is authored by Astrologer Vallal Paari, carrying the 50-year legacy of Moola Guru Maguleeswaran Ayya and Chithode Navagraha Aaraaichiyaalar Sangam.</p>
                 </div>
+
                 <div class="footer-links">
-                    <h4 data-i18n="footer_links_title">Quick Links</h4>
+                    <h4 data-i18n="footer_quick_links">Sacred Navigation</h4>
                     <ul>
-                        <li><a href="index.html#home" data-i18n="nav_home">Home</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
                         <li><a href="panchangam.html" data-i18n="nav_panchangam">Daily Panchangam</a></li>
                         <li><a href="tools.html" data-i18n="nav_tools">Planetary Tools</a></li>
-                        <li><a href="guru.html" data-i18n="nav_guru">About Guru</a></li>
-                        <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                        <li><a href="guru.html" data-i18n="nav_guru">Guru Parampara</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Sangam</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-contact">
-                    <h4 data-i18n="footer_connect">Connect</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
+                    <h4 data-i18n="footer_contact_info">Sangam & Author Desk</h4>
+                    <p><i class="fas fa-location-dot"></i> <span data-i18n="footer_address">Chithode Navagraha Aaraaichiyaalar Sangam, Chithode, Erode District, Tamil Nadu, India</span></p>
+                    <p><i class="fas fa-phone"></i> +91 98421 XXXXX / +91 94430 XXXXX</p>
+                    <p><i class="fas fa-envelope"></i> contact@valampuripanchangam.org</p>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2026 Valampuri Panchangam. All rights reserved.</p>
+                <p data-i18n="footer_rights">© 2026 Valampuri Panchangam. All Rights Reserved. Authored by Astrologer Vallal Paari | Chithode Navagraha Aaraaichiyaalar Sangam.</p>
             </div>
         </div>
     </footer>
 
     <script src="cursor.js" defer></script>
+    <script src="panchangam-engine.js"></script>
     <script>
-        const translations = {
-            en: {
-                nav_home: "Home",
-                nav_panchangam: "Daily Panchangam",
-                nav_tools: "Planetary Tools",
-                nav_guru: "About Guru",
-                nav_about: "About",
-                guru_badge: "The Visionary Master",
-                guru_hero_title: "Prasanna Jothidamani <span class='highlight'>Baskaran</span>",
-                guru_hero_desc: "Founder of the Bhaskara System and a revolutionary in the field of modern astrology.",
-                guru_bio_title: "Life & Contributions",
-                guru_bio_desc: "Prasanna Jothidamani Madurai Thilak.Ki.Baskaran is the pioneering force behind the Bhaskara System of Astrology. Throughout his life, he has dedicated himself to refining the principles of Vedic wisdom with contemporary mathematical accuracy.",
-                guru_point1: "Developer of the Baskara System (Kusuma Bhaskara System)",
-                guru_point2: "Simplifying complex planetary calculations for the common seeker",
-                guru_point3: "Renowned expert in Prasanna (Horary) Astrology",
-                guru_philosophy_title: "Spiritual Philosophy",
-                guru_philosophy_desc: "His teachings bridge the gap between spiritual intuition and logical deduction, enabling practitioners to achieve success through divine timing.",
-                guru_teaching1_title: "Enlightenment",
-                guru_teaching1_desc: "Focusing on personal growth through planetary alignment.",
-                guru_teaching2_title: "Precision",
-                guru_teaching2_desc: "The Bhaskara System ensures accuracy in every prediction.",
-                guru_teaching3_title: "Universal Good",
-                guru_teaching3_desc: "Using astrology as a tool for the betterment of all humanity.",
-                footer_brand: "VALAMPURI",
-                footer_desc: "Guiding your journey through the cosmic dance of time.",
-                footer_links_title: "Quick Links",
-                footer_connect: "Connect"
-            },
-            ta: {
-                nav_home: "முகப்பு",
-                nav_panchangam: "நித்ய பஞ்சாங்கம்",
-                nav_tools: "கோள் கருவிகள்",
-                nav_guru: "குருவைப் பற்றி",
-                nav_about: "எங்களைப் பற்றி",
-                guru_badge: "தொலைநோக்கு மாஸ்டர்",
-                guru_hero_title: "பிரசன்ன ஜோதிடமணி <span class='highlight'>பாஸ்கரன்</span>",
-                guru_hero_desc: "பாஸ்கரா அமைப்பின் நிறுவனர் மற்றும் நவீன ஜோதிட துறையில் ஒரு புரட்சியாளர்.",
-                guru_bio_title: "வாழ்க்கை மற்றும் பங்களிப்புகள்",
-                guru_bio_desc: "பிரசன்ன ஜோதிடமணி மதுரை திலக்.கி.பாஸ்கரன் அவர்கள் பாஸ்கரா ஜோதிட முறையின் முன்னோடி சக்தியாவார். அவர் தனது வாழ்நாள் முழுவதும் வேத ஞானத்தின் கொள்கைகளை சமகால கணித துல்லியத்துடன் செம்மைப்படுத்துவதற்காக தன்னை அர்ப்பணித்துள்ளார்.",
-                guru_point1: "பாஸ்கரா முறையை உருவாக்கியவர் (குசும பாஸ்கர முறை)",
-                guru_point2: "சாதாரண தேடுபவற்காக சிக்கலான கிரகக் கணக்கீடுகளை எளிதாக்குதல்",
-                guru_point3: "பிரசன்ன (ஆருடம்) ஜோதிடத்தில் புகழ்பெற்ற நிபுணர்",
-                guru_philosophy_title: "ஆன்மீக தத்துவம்",
-                guru_philosophy_desc: "அவரது போதனைகள் ஆன்மீக உள்ளுணர்வு மற்றும் தர்க்கரீதியான விலக்கு ஆகியவற்றுக்கு இடையேயான இடைவெளியைக் குறைக்கின்றன, மேலும் தெய்வீக நேரத்தின் மூலம் பயிற்சியாளர்கள் வெற்றியை அடைய உதவுகின்றன.",
-                guru_teaching1_title: "ஞானம்",
-                guru_teaching1_desc: "கிரக சீரமைப்பு மூலம் தனிப்பட்ட வளர்ச்சியில் கவனம் செலுத்துதல்.",
-                guru_teaching2_title: "துல்லியம்",
-                guru_teaching2_desc: "பாஸ்கரா முறை ஒவ்வொரு கணிப்பிலும் துல்லியத்தை உறுதி செய்கிறது.",
-                guru_teaching3_title: "உலகளாவிய நன்மை",
-                guru_teaching3_desc: "ஜோதிடத்தை முழு மனிதகுலத்தின் முன்னேற்றத்திற்கான ஒரு கருவியாகப் பயன்படுத்துதல்.",
-                footer_brand: "வலம்புரி",
-                footer_desc: "காலத்தின் பிரபஞ்ச நடனத்தின் மூலம் உங்கள் பயணத்தை வழிநடத்துகிறது.",
-                footer_links_title: "விரைவான இணைப்புகள்",
-                footer_connect: "இணைக்கவும்"
-            }
-        };
-
-        const langToggle = document.querySelector('#langToggle');
-        const langOpts = document.querySelectorAll('.lang-opt');
-
-        function updateLanguage(lang) {
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang] && translations[lang][key]) {
-                    el.innerHTML = translations[lang][key];
-                }
-            });
-
-            langToggle.classList.toggle('active', lang === 'ta');
-            langOpts.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
-            localStorage.setItem('valampuri_lang', lang);
+        function updateLiveTime() {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
+            const dateStr = now.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+            const ticker = document.getElementById('liveTimeTicker');
+            if (ticker) ticker.textContent = `IST: ${dateStr} • ${timeStr}`;
         }
-
-        langToggle.addEventListener('click', () => {
-            const currentLang = localStorage.getItem('valampuri_lang') || 'en';
-            const nextLang = currentLang === 'en' ? 'ta' : 'en';
-            updateLanguage(nextLang);
-        });
-
-        const savedLang = localStorage.getItem('valampuri_lang') || 'en';
-        updateLanguage(savedLang);
-
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        setInterval(updateLiveTime, 1000);
+        updateLiveTime();
     </script>
 </body>
 

@@ -4,436 +4,408 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Panchangam | Valampuri Astrology</title>
+    <title>Daily Tamil Panchangam | Valampuri Cosmic Calendar</title>
     <meta name="description"
-        content="Check your daily Panchangam and planetary positions for any selected date with Valampuri Astrology.">
+        content="Daily Tamil Panchangam calculations: Thithi, Nakshatram, Gowri Nalla Neram, Rahu Kalam, Yamagandam, Chandrashtamam & Navagraha positions.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .panchangam-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            padding: 40px 0;
-        }
-
-        .data-card {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: var(--shadow);
-            border: 1px solid #eee;
-            transition: transform 0.3s;
-        }
-
-        .data-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .data-card h3 {
-            color: var(--primary-dark);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border-bottom: 2px solid var(--secondary);
-            padding-bottom: 10px;
-        }
-
-        .data-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 12px 0;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .data-row:last-child {
-            border-bottom: none;
-        }
-
-        .label {
-            font-weight: 600;
-            color: #666;
-        }
-
-        .value {
-            font-weight: 600;
-            color: var(--primary);
-        }
-
-        .date-picker-container {
-            max-width: 400px;
-            margin: 0 auto 40px;
-            text-align: center;
-        }
-
-        .date-picker-container input {
-            width: 100%;
-            padding: 1rem 1.5rem;
-            border-radius: 50px;
-            border: 2px solid var(--primary-light);
-            font-size: 1.1rem;
-            font-family: inherit;
-            outline: none;
-            transition: border-color 0.3s;
-            cursor: pointer;
-        }
-
-        .date-picker-container input:focus {
-            border-color: var(--secondary);
-        }
-
-        .error-message {
-            background: #ffebee;
-            color: #c62828;
-            padding: 1rem;
-            border-radius: 10px;
-            text-align: center;
-            margin: 20px 0;
-            display: none;
-        }
-    </style>
+    <!-- Master CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Auspicious Top Bar -->
+    <div class="top-invoc-bar">
+        <div class="container">
+            <div class="invoc-text">
+                <i class="fas fa-om"></i>
+                <span data-i18n="top_invoc">Om Gam Ganapataye Namaha • Subham Bhavatu</span>
+            </div>
+            <div id="liveTimeTicker" style="font-size: 0.82rem; color: #ffeb3b;"></div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
     <header>
         <nav class="container">
-            <div class="logo">VALAMPURI <span>PANCHANGAM</span></div>
+            <a href="index.html" class="brand-container">
+                <div class="brand-logo-icon">
+                    <i class="fas fa-dharmachakra"></i>
+                </div>
+                <div class="logo-text-wrap">
+                    <div class="logo-title">VALAMPURI <span>PANCHANGAM</span></div>
+                    <div class="logo-subtitle" data-i18n="brand_subtitle">Chithode Navagraha Aaraaichiyaalar Sangam</div>
+                </div>
+            </a>
+
             <ul class="nav-links">
-                <li><a href="index.html#home" data-i18n="nav_home">Home</a></li>
-                <li><a href="panchangam.html" data-i18n="nav_panchangam">Daily Panchangam</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="panchangam.html" class="active" data-i18n="nav_panchangam">Daily Panchangam</a></li>
                 <li><a href="tools.html" data-i18n="nav_tools">Planetary Tools</a></li>
-                <li><a href="guru.html" data-i18n="nav_guru">About Guru</a></li>
-                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="guru.html" data-i18n="nav_guru">Guru Parampara</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About Sangam</a></li>
                 <li>
-                    <div class="lang-toggle" id="langToggle">
+                    <div class="lang-toggle" id="langToggle" title="Switch Language / மொழியை மாற்றுக">
                         <span class="lang-opt" data-lang="en">EN</span>
                         <span class="lang-opt" data-lang="ta">தமிழ்</span>
                         <div class="lang-slider"></div>
                     </div>
                 </li>
             </ul>
+
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
         </nav>
     </header>
 
     <main>
-        <section class="tools-hero">
-            <div class="container hero-content">
-                <h1 data-i18n="panchangam_title">Daily <span class="highlight">Panchangam</span></h1>
-                <p data-i18n="panchangam_desc">Select a date to view precise astrological timings and planetary
-                    positions.</p>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="badge-sacred">
+                    <i class="fas fa-calendar-check"></i>
+                    Drigganitha & Bhaskara Precision
+                </div>
+                <h1>Daily <span class="highlight">Panchangam Dashboard</span></h1>
+                <p>Select any date to view real-time Thithi, Nakshatram, Gowri Nalla Neram, Rahu Kalam, and Navagraha planetary positions.</p>
             </div>
         </section>
 
-        <section class="container reveal" style="padding-top: 60px;">
-            <div class="date-picker-container">
-                <label for="datePicker" style="display: block; margin-bottom: 10px; font-weight: 600;"
-                    data-i18n="select_date">Select Date:</label>
-                <input type="date" id="datePicker">
-            </div>
-
-            <div id="errorMessage" class="error-message" data-i18n="error_data">Data for the selected date is not
-                available yet.</div>
-
-            <div id="panchangamTable" class="table-container" style="display: none;">
-                <!-- We will use a table for the main Panchangam data and cards for planetary positions -->
-                <div class="section-header">
-                    <h2 id="displayDateText"></h2>
+        <!-- Panchangam Controls Bar -->
+        <div class="container">
+            <div class="panchangam-controls-bar reveal">
+                <div class="date-controls-group">
+                    <label for="panchangamDatePicker" style="font-weight: 700; color: var(--primary-dark); font-size: 0.95rem;">
+                        <i class="fas fa-calendar-alt" style="color: var(--primary-crimson); margin-right: 6px;"></i>
+                        Select Date:
+                    </label>
+                    <input type="date" id="panchangamDatePicker" class="custom-date-input">
+                    <button class="btn-pill active" id="btnToday">Today</button>
+                    <button class="btn-pill" id="btnTomorrow">Tomorrow</button>
                 </div>
 
-                <table class="transit-table">
-                    <thead>
-                        <tr>
-                            <th data-i18n="th_attribute">Attribute</th>
-                            <th data-i18n="th_value">Value</th>
-                        </tr>
-                    </thead>
-                    <tbody id="panchangamBody">
-                        <!-- Dynamic rows -->
-                    </tbody>
-                </table>
+                <div>
+                    <button class="btn-gold" id="btnPrintSlip" style="padding: 9px 20px; font-size: 0.88rem;">
+                        <i class="fas fa-print"></i> Print / Save Slip
+                    </button>
+                </div>
             </div>
 
-            <div id="planetarySection" class="reveal" style="display: none; margin-top: 60px;">
-                <div class="section-header">
-                    <h2 data-i18n="planetary_positions_title">Planetary Positions</h2>
+            <!-- Panchangam Dynamic Content -->
+            <div class="panchangam-dashboard-grid reveal">
+                <!-- Left Column: Core 5-Angas & Astronomical Parameters -->
+                <div class="dashboard-left">
+                    <!-- Date Overview Card -->
+                    <div class="p-card" style="border-top: 4px solid var(--primary-maroon);">
+                        <div class="p-card-header">
+                            <h3 id="displayTamilDateTitle">--</h3>
+                            <span class="badge-sacred" id="displayPakshamBadge" style="margin-bottom: 0;">--</span>
+                        </div>
+                        
+                        <table class="data-table-modern">
+                            <tbody>
+                                <tr>
+                                    <td class="prop-name"><i class="fas fa-sun" style="color: var(--gold-dark); margin-right: 8px;"></i> Tamil Year (வருடம்)</td>
+                                    <td class="prop-value" id="valTamilYear">--</td>
+                                </tr>
+                                <tr>
+                                    <td class="prop-name"><i class="fas fa-compass" style="color: var(--primary-crimson); margin-right: 8px;"></i> Ayana (அயனம்)</td>
+                                    <td class="prop-value" id="valAyana">--</td>
+                                </tr>
+                                <tr>
+                                    <td class="prop-name"><i class="fas fa-calendar-day" style="color: var(--gold-dark); margin-right: 8px;"></i> Day & Ruler (கிழமை & அதிபதி)</td>
+                                    <td class="prop-value" id="valVara">--</td>
+                                </tr>
+                                <tr>
+                                    <td class="prop-name"><i class="fas fa-sun" style="color: #ff9800; margin-right: 8px;"></i> Sunrise / Sunset (உதயம் / அஸ்தமனம்)</td>
+                                    <td class="prop-value" id="valSunTimings">--</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 5 Sacred Angas Card -->
+                    <div class="p-card">
+                        <div class="p-card-header">
+                            <h3><i class="fas fa-star-of-david"></i> பஞ்ச அங்கங்கள் (5 Sacred Limbs)</h3>
+                        </div>
+
+                        <table class="data-table-modern">
+                            <tbody>
+                                <tr>
+                                    <td class="prop-name"><i class="fas fa-moon" style="color: #5c6bc0; margin-right: 8px;"></i> Thithi (திதி)</td>
+                                    <td class="prop-value">
+                                        <span id="valThithi">--</span>
+                                        <span style="font-size: 0.8rem; color: var(--text-muted); display: block;" id="valThithiEnd">--</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="prop-name"><i class="fas fa-star" style="color: #ffd700; margin-right: 8px;"></i> Nakshatram (நட்சத்திரம்)</td>
+                                    <td class="prop-value">
+                                        <span id="valNakshatra">--</span>
+                                        <span style="font-size: 0.8rem; color: var(--text-muted); display: block;" id="valNakshatraDetails">--</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="prop-name"><i class="fas fa-link" style="color: var(--primary-crimson); margin-right: 8px;"></i> Yogam (யோகம்)</td>
+                                    <td class="prop-value" id="valYoga">--</td>
+                                </tr>
+                                <tr>
+                                    <td class="prop-name"><i class="fas fa-hourglass-half" style="color: #00897b; margin-right: 8px;"></i> Karanam (கரணம்)</td>
+                                    <td class="prop-value" id="valKarana">--</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Planetary Positions Section -->
+                    <div class="p-card">
+                        <div class="p-card-header">
+                            <h3><i class="fas fa-globe"></i> கிரக நிலைகள் (Navagraha Longitudes)</h3>
+                        </div>
+                        <div class="navagraha-grid" id="navagrahaGrid">
+                            <!-- Injected via JavaScript -->
+                        </div>
+                    </div>
                 </div>
-                <div class="panchangam-grid" id="planetaryGrid">
-                    <!-- Planetary cards will be inserted here -->
+
+                <!-- Right Column: Auspicious & Inauspicious Timings -->
+                <div class="dashboard-right">
+                    <!-- Auspicious Timings -->
+                    <div class="p-card" style="border-top: 4px solid #1e8e3e;">
+                        <div class="p-card-header">
+                            <h3 style="color: #1e8e3e;"><i class="fas fa-circle-check" style="color: #1e8e3e;"></i> சுப காலங்கள் (Auspicious Timings)</h3>
+                        </div>
+
+                        <div class="timing-pill-row auspicious">
+                            <div>
+                                <span style="font-size: 0.84rem; color: var(--text-muted); display: block;">நல்ல நேரம் (Nalla Neram)</span>
+                                <strong style="font-size: 1.05rem; color: #1e8e3e;" id="valNallaNeram">--</strong>
+                            </div>
+                            <i class="fas fa-clock" style="color: #1e8e3e; font-size: 1.2rem;"></i>
+                        </div>
+
+                        <div class="timing-pill-row auspicious">
+                            <div>
+                                <span style="font-size: 0.84rem; color: var(--text-muted); display: block;">பகல் கௌரி (Day Gowri)</span>
+                                <strong style="font-size: 1.05rem; color: #1e8e3e;" id="valGowriDay">--</strong>
+                            </div>
+                            <i class="fas fa-sun" style="color: #1e8e3e; font-size: 1.2rem;"></i>
+                        </div>
+
+                        <div class="timing-pill-row auspicious">
+                            <div>
+                                <span style="font-size: 0.84rem; color: var(--text-muted); display: block;">இரவு கௌரி (Night Gowri)</span>
+                                <strong style="font-size: 1.05rem; color: #1e8e3e;" id="valGowriNight">--</strong>
+                            </div>
+                            <i class="fas fa-moon" style="color: #1e8e3e; font-size: 1.2rem;"></i>
+                        </div>
+
+                        <div class="timing-pill-row auspicious">
+                            <div>
+                                <span style="font-size: 0.84rem; color: var(--text-muted); display: block;">பிரம்ம முகூர்த்தம் (Brahma Muhurtham)</span>
+                                <strong style="font-size: 1.05rem; color: #1e8e3e;" id="valBrahma">--</strong>
+                            </div>
+                            <i class="fas fa-hands-praying" style="color: #1e8e3e; font-size: 1.2rem;"></i>
+                        </div>
+                    </div>
+
+                    <!-- Inauspicious Timings & Caution -->
+                    <div class="p-card" style="border-top: 4px solid #c62828;">
+                        <div class="p-card-header">
+                            <h3 style="color: #c62828;"><i class="fas fa-triangle-exclamation" style="color: #c62828;"></i> அசுப காலங்கள் & எச்சரிக்கை</h3>
+                        </div>
+
+                        <div class="timing-pill-row danger">
+                            <div>
+                                <span style="font-size: 0.84rem; color: var(--text-muted); display: block;">இராகு காலம் (Rahu Kalam)</span>
+                                <strong style="font-size: 1.05rem; color: #c62828;" id="valRahu">--</strong>
+                            </div>
+                            <i class="fas fa-ban" style="color: #c62828; font-size: 1.2rem;"></i>
+                        </div>
+
+                        <div class="timing-pill-row danger">
+                            <div>
+                                <span style="font-size: 0.84rem; color: var(--text-muted); display: block;">எமகண்டம் (Yamagandam)</span>
+                                <strong style="font-size: 1.05rem; color: #c62828;" id="valYama">--</strong>
+                            </div>
+                            <i class="fas fa-skull" style="color: #c62828; font-size: 1.2rem;"></i>
+                        </div>
+
+                        <div class="timing-pill-row danger">
+                            <div>
+                                <span style="font-size: 0.84rem; color: var(--text-muted); display: block;">குளிகை (Gulikai)</span>
+                                <strong style="font-size: 1.05rem; color: #c62828;" id="valGulika">--</strong>
+                            </div>
+                            <i class="fas fa-hourglass" style="color: #c62828; font-size: 1.2rem;"></i>
+                        </div>
+
+                        <div class="timing-pill-row" style="border-left-color: #e65100; background: #fff8e1;">
+                            <div>
+                                <span style="font-size: 0.84rem; color: var(--text-muted); display: block;">சந்திராஷ்டமம் (Chandrashtamam Rasi)</span>
+                                <strong style="font-size: 1.15rem; color: #b71c1c;" id="valChandrashtamam">--</strong>
+                            </div>
+                            <i class="fas fa-triangle-exclamation" style="color: #b71c1c; font-size: 1.3rem;"></i>
+                        </div>
+
+                        <div class="timing-pill-row" style="border-left-color: #5d4037; background: #efebe9;">
+                            <div>
+                                <span style="font-size: 0.84rem; color: var(--text-muted); display: block;">சூலம் & பரிகாரம் (Soolam & Remedy)</span>
+                                <strong style="font-size: 0.95rem; color: #3e2723;" id="valSoolam">--</strong>
+                            </div>
+                            <i class="fas fa-location-crosshairs" style="color: #5d4037; font-size: 1.2rem;"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3 data-i18n="footer_brand">VALAMPURI</h3>
-                    <p data-i18n="footer_desc">Guiding your journey through the cosmic dance of time.</p>
+                    <h3>VALAMPURI <span>PANCHANGAM</span></h3>
+                    <p data-i18n="footer_about">Valampuri Panchangam is the premier spiritual compass and astrological authority, bridging ancient Vedic astronomical secrets with modern mathematical precision.</p>
                 </div>
+
                 <div class="footer-links">
-                    <h4 data-i18n="footer_links_title">Quick Links</h4>
+                    <h4 data-i18n="footer_quick_links">Sacred Navigation</h4>
                     <ul>
-                        <li><a href="index.html#home" data-i18n="nav_home">Home</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
                         <li><a href="panchangam.html" data-i18n="nav_panchangam">Daily Panchangam</a></li>
                         <li><a href="tools.html" data-i18n="nav_tools">Planetary Tools</a></li>
-                        <li><a href="guru.html" data-i18n="nav_guru">About Guru</a></li>
-                        <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                        <li><a href="guru.html" data-i18n="nav_guru">Guru Parampara</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Sangam</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-contact">
-                    <h4 data-i18n="footer_connect">Connect</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                    </div>
+                    <h4 data-i18n="footer_contact_info">Sangam & Author Desk</h4>
+                    <p><i class="fas fa-location-dot"></i> <span data-i18n="footer_address">Chithode Navagraha Aaraaichiyaalar Sangam, Chithode, Erode District, Tamil Nadu, India</span></p>
+                    <p><i class="fas fa-phone"></i> +91 98421 XXXXX / +91 94430 XXXXX</p>
+                    <p><i class="fas fa-envelope"></i> contact@valampuripanchangam.org</p>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2026 Valampuri Panchangam. All rights reserved.</p>
+                <p data-i18n="footer_rights">© 2026 Valampuri Panchangam. All Rights Reserved. Authored by Astrologer Vallal Paari | Chithode Navagraha Aaraaichiyaalar Sangam.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="cursor.js" defer></script>
+    <script src="panchangam-engine.js"></script>
     <script>
-        const translations = {
-            en: {
-                nav_home: "Home",
-                nav_features: "Features",
-                nav_panchangam: "Daily Panchangam",
-                nav_tools: "Planetary Tools",
-                nav_guru: "About Guru",
-                nav_about: "About",
-                panchangam_title: "Daily <span class='highlight'>Panchangam</span>",
-                panchangam_desc: "Select a date to view precise astrological timings and planetary positions.",
-                select_date: "Select Date:",
-                th_attribute: "Attribute",
-                th_value: "Value",
-                planetary_positions_title: "Planetary Positions",
-                footer_brand: "VALAMPURI",
-                footer_desc: "Guiding your journey through the cosmic dance of time.",
-                footer_links_title: "Quick Links",
-                footer_connect: "Connect",
-                error_data: "Panchangam data for this date is currently unavailable.",
-                // Table headers
-                tithi: "Tithi",
-                nakshatra: "Nakshatra",
-                yoga: "Yoga",
-                karana: "Karana",
-                vara: "Vara",
-                sunrise: "Sunrise",
-                sunset: "Sunset",
-                rahukaal: "Rahu Kaal",
-                yamagandam: "Yamagandam",
-                gulika: "Gulika"
-            },
-            ta: {
-                nav_home: "முகப்பு",
-                nav_features: "அம்சங்கள்",
-                nav_panchangam: "நித்ய பஞ்சாங்கம்",
-                nav_tools: "கோள் கருவிகள்",
-                nav_guru: "குருவைப் பற்றி",
-                nav_about: "எங்களைப் பற்றி",
-                panchangam_title: "நித்ய <span class='highlight'>பஞ்சாங்கம்</span>",
-                panchangam_desc: "துல்லியமான ஜோதிட நேரங்கள் மற்றும் கிரக நிலைகளைக் காண ஒரு தேதியைத் தேர்ந்தெடுக்கவும்.",
-                select_date: "தேதியைத் தேர்ந்தெடுக்கவும்:",
-                th_attribute: "பஞ்சாங்க விவரம்",
-                th_value: "விவரம்",
-                planetary_positions_title: "கிரக நிலைகள்",
-                footer_brand: "வலம்புரி",
-                footer_desc: "காலத்தின் பிரபஞ்ச நடனத்தின் மூலம் உங்கள் பயணத்தை வழிநடத்துகிறது.",
-                footer_links_title: "விரைவான இணைப்புகள்",
-                footer_connect: "இணைக்கவும்",
-                error_data: "இந்த தேதிக்கான பஞ்சாங்க விவரங்கள் தற்போது இல்லை.",
-                // Table headers
-                tithi: "திதி",
-                nakshatra: "நட்சத்திரம்",
-                yoga: "யோகம்",
-                karana: "கரணம்",
-                vara: "வாரம்",
-                sunrise: "சூரிய உதயம்",
-                sunset: "சூரிய அஸ்தமனம்",
-                rahukaal: "ராகு காலம்",
-                yamagandam: "எமகண்டம்",
-                gulika: "குளிகை"
-            }
-        };
+        const datePicker = document.getElementById('panchangamDatePicker');
+        const btnToday = document.getElementById('btnToday');
+        const btnTomorrow = document.getElementById('btnTomorrow');
+        const btnPrint = document.getElementById('btnPrintSlip');
 
-        const rasiMap = {
-            "மேஷம்": { en: "Aries", ta: "மேஷம்" },
-            "ரிஷபம்": { en: "Taurus", ta: "ரிஷபம்" },
-            "மிதுனம்": { en: "Gemini", ta: "மிதுனம்" },
-            "கடகம்": { en: "Cancer", ta: "கடகம்" },
-            "சிம்மம்": { en: "Leo", ta: "சிம்மம்" },
-            "கன்னி": { en: "Virgo", ta: "கன்னி" },
-            "துலாம்": { en: "Libra", ta: "துலாம்" },
-            "விருச்சிகம்": { en: "Scorpio", ta: "விருச்சிகம்" },
-            "தனுசு": { en: "Sagittarius", ta: "தனுசு" },
-            "மகரம்": { en: "Capricorn", ta: "மகரம்" },
-            "கும்பம்": { en: "Aquarius", ta: "கும்பம்" },
-            "மீனம்": { en: "Pisces", ta: "மீனம்" }
-        };
-
-        const planetMap = {
-            "Sun": { en: "Sun", ta: "சூரியன்", icon: "fa-sun" },
-            "Moon": { en: "Moon", ta: "சந்திரன்", icon: "fa-moon" },
-            "Mars": { en: "Mars", ta: "செவ்வாய்", icon: "fa-fire" },
-            "Mercury": { en: "Mercury", ta: "புதன்", icon: "fa-bolt" },
-            "Jupiter": { en: "Jupiter", ta: "வியாழன்", icon: "fa-star" },
-            "Venus": { en: "Venus", ta: "சுக்கிரன்", icon: "fa-gem" },
-            "Saturn": { en: "Saturn", ta: "சனி", icon: "fa-ring" },
-            "Rahu": { en: "Rahu", ta: "ராகு", icon: "fa-dragon" },
-            "Ketu": { en: "Ketu", ta: "கேது", icon: "fa-dragon fa-flip-horizontal" }
-        };
-
-        let dailyData = null;
-
-        async function loadDailyPanchangam() {
-            try {
-                // Fetching daily panchgam.json (waiting for file from user, using placeholder logic)
-                const response = await fetch('daily panchgam.json');
-                if (!response.ok) throw new Error("File not found");
-                dailyData = await response.json();
-
-                // Set today's date and trigger render
-                const today = new Date().toISOString().split('T')[0];
-                document.getElementById('datePicker').value = today;
-                renderPanchangam(today);
-            } catch (error) {
-                console.warn("Could not load daily panchgam.json. Please ensure it exists.", error);
-                document.getElementById('errorMessage').style.display = 'block';
-            }
+        function setDateAndRender(dateObj) {
+            const dateStr = dateObj.toISOString().split('T')[0];
+            datePicker.value = dateStr;
+            renderPanchangam(dateStr);
         }
 
         function renderPanchangam(dateStr) {
-            if (!dailyData) return;
+            const p = ValampuriEngine.calculatePanchangam(dateStr);
+            const lang = localStorage.getItem('valampuri_lang') || 'en';
 
-            // Normalize date format from picker (YYYY-MM-DD) to whatever is in the JSON
-            // Assuming the JSON structure might be an object with dates as keys or an array
-            // Let's assume it's an array of objects where each has a "date" property in DD.MM.YYYY format
-            const formattedPickerDate = dateStr.split('-').reverse().join('.');
-            const dayInfo = dailyData.find(item => item.date === formattedPickerDate || item.date === dateStr);
+            document.getElementById('displayTamilDateTitle').textContent = lang === 'ta' ? p.formattedDateTa : p.formattedDateEn;
+            document.getElementById('displayPakshamBadge').textContent = lang === 'ta' ? p.paksham.ta : p.paksham.en;
+            document.getElementById('valTamilYear').textContent = lang === 'ta' ? p.tamilYear.ta : p.tamilYear.en;
+            document.getElementById('valAyana').textContent = lang === 'ta' ? p.ayana.ta : p.ayana.en;
+            document.getElementById('valVara').textContent = `${lang === 'ta' ? p.vara.ta : p.vara.en} (${p.vara.ruler})`;
+            document.getElementById('valSunTimings').textContent = `${p.sunrise} / ${p.sunset}`;
 
-            const table = document.getElementById('panchangamTable');
-            const planetary = document.getElementById('planetarySection');
-            const error = document.getElementById('errorMessage');
-            const currentLang = localStorage.getItem('valampuri_lang') || 'en';
+            // 5 Angas
+            document.getElementById('valThithi').textContent = lang === 'ta' ? p.tithi.ta : p.tithi.en;
+            document.getElementById('valThithiEnd').textContent = `${lang === 'ta' ? 'முடிவு நேரம்' : 'Ends by'} ${p.tithi.endTime}`;
+            document.getElementById('valNakshatra').textContent = lang === 'ta' ? p.nakshatra.ta : p.nakshatra.en;
+            document.getElementById('valNakshatraDetails').textContent = `${lang === 'ta' ? 'பாதம்' : 'Padam'} ${p.nakshatra.padam} • ${lang === 'ta' ? 'அதிபதி' : 'Ruler'}: ${p.nakshatra.ruler} • ${lang === 'ta' ? 'முடிவு' : 'Ends'}: ${p.nakshatra.endTime}`;
+            document.getElementById('valYoga').textContent = lang === 'ta' ? p.yoga.ta : p.yoga.en;
+            document.getElementById('valKarana').textContent = lang === 'ta' ? p.karana.ta : p.karana.en;
 
-            if (dayInfo) {
-                table.style.display = 'block';
-                planetary.style.display = 'block';
-                error.style.display = 'none';
+            // Auspicious
+            document.getElementById('valNallaNeram').textContent = p.nallaNeram;
+            document.getElementById('valGowriDay').textContent = p.gowriDay;
+            document.getElementById('valGowriNight').textContent = p.gowriNight;
+            document.getElementById('valBrahma').textContent = p.brahmaMuhurtham;
 
-                // Render Table
-                const body = document.getElementById('panchangamBody');
-                body.innerHTML = "";
+            // Inauspicious
+            document.getElementById('valRahu').textContent = p.rahuKaalam;
+            document.getElementById('valYama').textContent = p.yamagandam;
+            document.getElementById('valGulika').textContent = p.gulikai;
+            document.getElementById('valChandrashtamam').textContent = `${p.chandrashtamam.icon} ${lang === 'ta' ? p.chandrashtamam.ta : p.chandrashtamam.en}`;
+            document.getElementById('valSoolam').textContent = `${lang === 'ta' ? 'சூலம்' : 'Soolam'}: ${p.soolam} • ${lang === 'ta' ? 'பரிகாரம்' : 'Remedy'}: ${p.parikaram}`;
 
-                const attributes = ['tithi', 'nakshatra', 'yoga', 'karana', 'vara', 'sunrise', 'sunset', 'rahukaal', 'yamagandam', 'gulika'];
-                attributes.forEach(attr => {
-                    if (dayInfo[attr]) {
-                        const row = document.createElement('tr');
-                        row.innerHTML = `
-                            <td>${translations[currentLang][attr]}</td>
-                            <td>${dayInfo[attr]}</td>
-                        `;
-                        body.appendChild(row);
-                    }
-                });
-
-                // Render Planetary Grid
-                const grid = document.getElementById('planetaryGrid');
-                grid.innerHTML = "";
-                if (dayInfo.planets) {
-                    dayInfo.planets.forEach(p => {
-                        const planetInfo = planetMap[p.name] || { en: p.name, ta: p.name, icon: "fa-circle" };
-                        const rasiInfo = rasiMap[p.rasi] || { en: p.rasi, ta: p.rasi };
-
-                        const card = document.createElement('div');
-                        card.className = "data-card";
-                        card.innerHTML = `
-                            <h3><i class="fas ${planetInfo.icon}"></i> ${planetInfo[currentLang]}</h3>
-                            <div class="data-row">
-                                <span class="label">Rasi</span>
-                                <span class="value">${rasiInfo[currentLang]}</span>
-                            </div>
-                            <div class="data-row">
-                                <span class="label">Deg</span>
-                                <span class="value">${p.degree || '-'}</span>
-                            </div>
-                        `;
-                        grid.appendChild(card);
-                    });
-                }
-            } else {
-                table.style.display = 'none';
-                planetary.style.display = 'none';
-                error.style.display = 'block';
-            }
+            // Render Navagraha Grid
+            const navGrid = document.getElementById('navagrahaGrid');
+            navGrid.innerHTML = "";
+            p.planets.forEach(pl => {
+                const card = document.createElement('div');
+                card.className = "planet-card-mini";
+                card.innerHTML = `
+                    <div class="planet-icon"><i class="fas ${pl.icon}"></i></div>
+                    <div class="planet-name">${lang === 'ta' ? pl.ta : pl.name}</div>
+                    <div class="planet-rasi">${lang === 'ta' ? pl.rasi : pl.rasiEn}</div>
+                    <div class="planet-deg">${pl.deg} (${pl.status})</div>
+                `;
+                navGrid.appendChild(card);
+            });
         }
 
-        document.getElementById('datePicker').addEventListener('change', (e) => {
+        // Event Listeners
+        datePicker.addEventListener('change', (e) => {
             renderPanchangam(e.target.value);
+            btnToday.classList.remove('active');
+            btnTomorrow.classList.remove('active');
         });
 
-        const langToggle = document.querySelector('#langToggle');
-        const langOpts = document.querySelectorAll('.lang-opt');
+        btnToday.addEventListener('click', () => {
+            setDateAndRender(new Date());
+            btnToday.classList.add('active');
+            btnTomorrow.classList.remove('active');
+        });
 
-        function updateLanguage(lang) {
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang] && translations[lang][key]) {
-                    el.innerHTML = translations[lang][key];
-                }
-            });
+        btnTomorrow.addEventListener('click', () => {
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            setDateAndRender(tomorrow);
+            btnTomorrow.classList.add('active');
+            btnToday.classList.remove('active');
+        });
 
-            langToggle.classList.toggle('active', lang === 'ta');
-            langOpts.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
-            localStorage.setItem('valampuri_lang', lang);
+        btnPrint.addEventListener('click', () => {
+            window.print();
+        });
 
-            const currentDate = document.getElementById('datePicker').value;
-            if (currentDate) renderPanchangam(currentDate);
+        window.addEventListener('DOMContentLoaded', () => {
+            const today = new Date();
+            setDateAndRender(today);
+        });
+
+        window.addEventListener('valampuri_lang_changed', () => {
+            if (datePicker.value) renderPanchangam(datePicker.value);
+        });
+
+        function updateLiveTime() {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
+            const dateStr = now.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+            const ticker = document.getElementById('liveTimeTicker');
+            if (ticker) ticker.textContent = `IST: ${dateStr} • ${timeStr}`;
         }
-
-        langToggle.addEventListener('click', () => {
-            const currentLang = localStorage.getItem('valampuri_lang') || 'en';
-            const nextLang = currentLang === 'en' ? 'ta' : 'en';
-            updateLanguage(nextLang);
-        });
-
-        // Initialize
-        const savedLang = localStorage.getItem('valampuri_lang') || 'en';
-        updateLanguage(savedLang);
-        loadDailyPanchangam();
-
-        // Mobile Menu Toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Scroll Reveal Observer
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        setInterval(updateLiveTime, 1000);
+        updateLiveTime();
     </script>
 </body>
 

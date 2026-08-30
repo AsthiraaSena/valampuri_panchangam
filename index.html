@@ -4,363 +4,485 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valampuri Panchangam | Cosmic Guidance & Daily Wisdom</title>
+    <title>Valampuri Panchangam 2026 | Astrologer Vallal Paari | Chithode Navagraha Sangam</title>
     <meta name="description"
-        content="Elevate your life with Valampuri Panchangam. Discover precise Tithi, Nakshatra, and spiritual timing for success and harmony.">
+        content="Official Valampuri Tamil Panchangam 2026 authored by 3rd generation astrologer Vallal Paari, grandson of 50-year veteran Moola Guru Maguleeswaran Ayya. Chithode Navagraha Aaraaichiyaalar Sangam.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Master CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Auspicious Top Bar -->
+    <div class="top-invoc-bar">
+        <div class="container">
+            <div class="invoc-text">
+                <i class="fas fa-om"></i>
+                <span data-i18n="top_invoc">Om Gam Ganapataye Namaha • Moola Guru Maguleeswaran Ayya Thunai</span>
+            </div>
+            <div id="liveTimeTicker" style="font-size: 0.82rem; color: #ffeb3b;"></div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
     <header>
         <nav class="container">
-            <div class="logo">VALAMPURI <span>PANCHANGAM</span></div>
+            <a href="index.html" class="brand-container">
+                <div class="brand-logo-icon">
+                    <i class="fas fa-dharmachakra"></i>
+                </div>
+                <div class="logo-text-wrap">
+                    <div class="logo-title">VALAMPURI <span>PANCHANGAM</span></div>
+                    <div class="logo-subtitle" data-i18n="brand_subtitle">Chithode Navagraha Aaraaichiyaalar Sangam</div>
+                </div>
+            </a>
+
             <ul class="nav-links">
-                <li><a href="index.html#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
                 <li><a href="panchangam.html" data-i18n="nav_panchangam">Daily Panchangam</a></li>
                 <li><a href="tools.html" data-i18n="nav_tools">Planetary Tools</a></li>
-                <li><a href="guru.html" data-i18n="nav_guru">About Guru</a></li>
-                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="guru.html" data-i18n="nav_guru">Guru Parampara</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About Sangam</a></li>
                 <li>
-                    <div class="lang-toggle" id="langToggle">
+                    <div class="lang-toggle" id="langToggle" title="Switch Language / மொழியை மாற்றுக">
                         <span class="lang-opt" data-lang="en">EN</span>
                         <span class="lang-opt" data-lang="ta">தமிழ்</span>
                         <div class="lang-slider"></div>
                     </div>
                 </li>
             </ul>
+
             <div class="menu-toggle"><i class="fas fa-bars"></i></div>
         </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <span class="badge" data-i18n="hero_badge">Daily Planetary Guidance</span>
-                <h1 data-i18n="hero_title">Precision in Every <span class="highlight">Moment</span></h1>
-                <p data-i18n="hero_desc">Unlock the spiritual power of time with Valampuri Panchangam. Your definitive
-                    guide to daily cosmic
-                    alignment and prosperity.</p>
-                <div class="hero-btns">
-                    <a href="panchangam.html" class="btn-glow" data-i18n="btn_panchangam">View Panchangam</a>
-                    <a href="guru.html" class="btn-outline" data-i18n="nav_guru">About Guru</a>
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="badge-sacred">
+                            <i class="fas fa-certificate"></i>
+                            <span data-i18n="hero_badge">3rd Generation Heritage • Official 2026 Edition</span>
+                        </div>
+                        <h1 data-i18n="hero_title">Valampuri Panchangam & <span class="highlight">Vedic Astrological Heritage</span></h1>
+                        <p data-i18n="hero_desc">Authored by Astrologer Vallal Paari (3rd Generation Astrologer), grandson of 50-year veteran Moola Guru Maguleeswaran Ayya and son of Astrologer Varatharaajan. Published under the auspices of Chithode Navagraha Aaraaichiyaalar Sangam.</p>
+                        <div class="hero-cta-group">
+                            <a href="panchangam.html" class="btn-gold">
+                                <i class="fas fa-calendar-day"></i>
+                                <span data-i18n="btn_view_today">Today's Panchangam</span>
+                            </a>
+                            <a href="#book-showcase" class="btn-maroon">
+                                <i class="fas fa-book-open"></i>
+                                <span data-i18n="btn_order_book">Order 2026 Book</span>
+                            </a>
+                            <a href="guru.html" class="btn-outline-gold">
+                                <i class="fas fa-hands-praying"></i>
+                                <span data-i18n="btn_guru_bio">Guru Parampara Lineage</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual-wrap">
+                        <div class="hero-mandala-bg"></div>
+                        <div class="hero-book-card">
+                            <img src="valampuri-book.jpg" alt="Valampuri Tamil Panchangam 2026 Book Edition">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="features" class="features reveal">
+        <!-- Live Today's Snapshot Card -->
+        <section class="container live-snapshot-section">
+            <div class="snapshot-card reveal">
+                <div class="snapshot-header">
+                    <div class="snapshot-title-wrap">
+                        <h2 data-i18n="snap_title">Today's Divine Cosmic Snapshot</h2>
+                        <p style="color: var(--text-muted); font-size: 0.92rem;" data-i18n="snap_subtitle">Daily almanac calculations backed by 50+ years of generational astrological research</p>
+                    </div>
+                    <div class="snapshot-date-badge" id="snapDateBadge">
+                        Loading...
+                    </div>
+                </div>
+
+                <div class="snapshot-grid">
+                    <div class="snap-item">
+                        <div class="snap-label">
+                            <i class="fas fa-moon"></i>
+                            <span data-i18n="snap_thithi">Tithi (திதி)</span>
+                        </div>
+                        <div class="snap-val" id="snapThithi">--</div>
+                        <div class="snap-sub" id="snapPaksham">--</div>
+                    </div>
+
+                    <div class="snap-item">
+                        <div class="snap-label">
+                            <i class="fas fa-star"></i>
+                            <span data-i18n="snap_nakshatra">Nakshatra (நட்சத்திரம்)</span>
+                        </div>
+                        <div class="snap-val" id="snapNakshatra">--</div>
+                        <div class="snap-sub" id="snapPadam">--</div>
+                    </div>
+
+                    <div class="snap-item">
+                        <div class="snap-label">
+                            <i class="fas fa-sun"></i>
+                            <span data-i18n="snap_nalla_neram">Auspicious Time (நல்ல நேரம்)</span>
+                        </div>
+                        <div class="snap-val" id="snapNallaNeram" style="color: #1e8e3e;">--</div>
+                        <div class="snap-sub">Morning & Evening</div>
+                    </div>
+
+                    <div class="snap-item">
+                        <div class="snap-label">
+                            <i class="fas fa-clock"></i>
+                            <span data-i18n="snap_rahu">Rahu Kalam (இராகு காலம்)</span>
+                        </div>
+                        <div class="snap-val" id="snapRahu" style="color: #c62828;">--</div>
+                        <div class="snap-sub">Inauspicious Period</div>
+                    </div>
+
+                    <div class="snap-item">
+                        <div class="snap-label">
+                            <i class="fas fa-triangle-exclamation"></i>
+                            <span data-i18n="snap_chandrashtamam">Chandrashtamam (சந்திராஷ்டமம்)</span>
+                        </div>
+                        <div class="snap-val" id="snapChandrashtamam" style="color: #b71c1c;">--</div>
+                        <div class="snap-sub">Caution for Rasi</div>
+                    </div>
+
+                    <div class="snap-item">
+                        <div class="snap-label">
+                            <i class="fas fa-gem"></i>
+                            <span data-i18n="snap_gowri">Gowri Auspicious (கௌரி)</span>
+                        </div>
+                        <div class="snap-val" id="snapGowri">--</div>
+                        <div class="snap-sub">Day Gowri Timing</div>
+                    </div>
+                </div>
+
+                <div class="snapshot-footer">
+                    <span style="font-size: 0.88rem; color: var(--text-muted);">
+                        <i class="fas fa-shield-halved" style="color: var(--gold-dark); margin-right: 6px;"></i>
+                        Chithode Navagraha Aaraaichiyaalar Sangam • Drigganitha Standard
+                    </span>
+                    <a href="panchangam.html" class="btn-gold" style="padding: 9px 20px; font-size: 0.88rem;">
+                        <i class="fas fa-arrow-right"></i>
+                        <span data-i18n="btn_full_panchangam">Open Full Panchangam Dashboard</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3-Generation Parampara Showcase -->
+        <section class="guru-section reveal">
+            <div class="container">
+                <div class="guru-grid">
+                    <div class="guru-portrait-wrap">
+                        <div class="guru-portrait-card">
+                            <img src="guru-portrait.jpg" alt="Moola Guru Maguleeswaran Ayya and Vallal Paari Parampara">
+                        </div>
+                    </div>
+
+                    <div class="guru-info">
+                        <div class="badge-sacred" style="background: rgba(143, 23, 39, 0.1); color: var(--primary-crimson); border-color: rgba(143, 23, 39, 0.3);">
+                            <i class="fas fa-hands-praying"></i>
+                            <span data-i18n="guru_badge">3-Generation Parampara</span>
+                        </div>
+                        <h2 data-i18n="guru_title">Astrologer <span class="highlight">Vallal Paari</span> & Lineage</h2>
+                        <div class="guru-designation" data-i18n="guru_role">Author: Valampuri Panchangam | Chithode Navagraha Aaraaichiyaalar Sangam</div>
+                        <p class="guru-bio-text" data-i18n="guru_desc">Continuing the sacred 3-generation astrological legacy founded by Moola Guru Maguleeswaran Ayya (50+ years of deep astrological mastery), carried forward by Astrologer Varatharaajan, and authored into the prestigious Valampuri Panchangam by grandson Vallal Paari.</p>
+
+                        <ul class="guru-credentials">
+                            <li><i class="fas fa-award"></i> <span data-i18n="guru_feat_1">Moola Guru: Maguleeswaran Ayya (50+ Years Astrological Mastery)</span></li>
+                            <li><i class="fas fa-award"></i> <span data-i18n="guru_feat_2">2nd Generation: Astrologer Varatharaajan (Sangam Pillar)</span></li>
+                            <li><i class="fas fa-award"></i> <span data-i18n="guru_feat_3">3rd Generation: Astrologer Vallal Paari (Author of Valampuri Panchangam)</span></li>
+                        </ul>
+
+                        <div class="hero-cta-group">
+                            <a href="guru.html" class="btn-maroon">
+                                <i class="fas fa-scroll"></i>
+                                <span data-i18n="btn_guru_bio">Read Guru Parampara History</span>
+                            </a>
+                            <a href="https://wa.me/919842100000?text=Vanakkam%20Astrologer%20Vallal%20Paari%20Ji,%20I%20would%20like%20to%20book%20an%20Astrology%20Consultation" target="_blank" class="btn-gold">
+                                <i class="fas fa-calendar-check"></i>
+                                <span data-i18n="btn_consult_guru">Book Astrological Consultation</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5 Sacred Limbs (Pancha-Angam) -->
+        <section class="angas-section reveal">
             <div class="container">
                 <div class="section-header">
-                    <h2 data-i18n="features_title">Core Components</h2>
-                    <p data-i18n="features_desc">Experience the traditional wisdom of the 5 limbs of time, calculated
-                        with modern precision.</p>
+                    <div class="badge-sacred" style="background: rgba(143, 23, 39, 0.1); color: var(--primary-crimson); border-color: rgba(143, 23, 39, 0.3);">
+                        <i class="fas fa-om"></i>
+                        Pancha-Angam Foundations
+                    </div>
+                    <h2 data-i18n="angas_title">The 5 Sacred Limbs of Time</h2>
+                    <p data-i18n="angas_desc">Pancha-Angam represents the cosmic forces governing health, longevity, prosperity, actions, and fortune.</p>
+                    <div class="section-divider"></div>
                 </div>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-moon"></i>
-                        <h3 data-i18n="tithi">Tithi</h3>
-                        <p data-i18n="tithi_desc">Lunar day information to guide your spiritual practices and rituals.
-                        </p>
+
+                <div class="angas-grid">
+                    <div class="anga-card">
+                        <div class="anga-icon-wrap"><i class="fas fa-moon"></i></div>
+                        <h3 data-i18n="tithi_title">Tithi (திதி)</h3>
+                        <p data-i18n="tithi_desc">The lunar day energy governed by Lord Shiva & Devi, determining divine grace and mental harmony for rituals and new beginnings.</p>
                     </div>
-                    <div class="feature-card">
-                        <i class="fas fa-calendar-day"></i>
-                        <h3 data-i18n="vara">Vara</h3>
-                        <p data-i18n="vara_desc">Specific day of the week influences and their impact on your
-                            activities.</p>
+
+                    <div class="anga-card">
+                        <div class="anga-icon-wrap"><i class="fas fa-sun"></i></div>
+                        <h3 data-i18n="vara_title">Vara (வாரம்)</h3>
+                        <p data-i18n="vara_desc">The planetary solar day dictating physical vitality, longevity, and optimal mundane activities based on celestial rulership.</p>
                     </div>
-                    <div class="feature-card">
-                        <i class="fas fa-star"></i>
-                        <h3 data-i18n="nakshatra">Nakshatra</h3>
-                        <p data-i18n="nakshatra_desc">Detailed analysis of the lunar mansion for personalized guidance.
-                        </p>
+
+                    <div class="anga-card">
+                        <div class="anga-icon-wrap"><i class="fas fa-star"></i></div>
+                        <h3 data-i18n="nakshatra_title">Nakshatra (நட்சத்திரம்)</h3>
+                        <p data-i18n="nakshatra_desc">The 27 lunar mansions radiating distinct karmic vibrations, guiding personal destiny, ceremonies, and Muhurtham timing.</p>
                     </div>
-                    <div class="feature-card">
-                        <i class="fas fa-link"></i>
-                        <h3 data-i18n="yoga">Yoga</h3>
-                        <p data-i18n="yoga_desc">Auspicious associations of Tithi and Nakshatra for success.</p>
+
+                    <div class="anga-card">
+                        <div class="anga-icon-wrap"><i class="fas fa-link"></i></div>
+                        <h3 data-i18n="yoga_title">Yoga (யோகம்)</h3>
+                        <p data-i18n="yoga_desc">The auspicious mathematical synthesis of Sun and Moon longitudes, cleansing obstacles and bestowing spiritual fruitfulness.</p>
                     </div>
-                    <div class="feature-card">
-                        <i class="fas fa-circle-nodes"></i>
-                        <h3 data-i18n="karana">Karana</h3>
-                        <p data-i18n="karana_desc">The half-day duration that dictates the energetic flow of actions.
-                        </p>
+
+                    <div class="anga-card">
+                        <div class="anga-icon-wrap"><i class="fas fa-hourglass-half"></i></div>
+                        <h3 data-i18n="karana_title">Karana (கரணம்)</h3>
+                        <p data-i18n="karana_desc">The half-tithi kinetic force governing the practical execution of contracts, journeys, and enterprise endeavors.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about reveal">
-            <div class="container about-flex">
-                <div class="about-text">
-                    <h2 data-i18n="about_title">Why Valampuri?</h2>
-                    <p data-i18n="about_desc">Valampuri Panchangam isn't just a calendar; it's a spiritual compass. We
-                        combine centuries-old
-                        astronomical data with simplified, actionable insights for the modern seeker.</p>
-                    <ul class="check-list">
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="about_point1">High-precision
-                                calculations</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="about_point2">User-friendly daily
-                                guidance</span></li>
-                        <li><i class="fas fa-check-circle"></i> <span data-i18n="about_point3">Customized for spiritual
-                                growth</span></li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <!-- Placeholder for spiritual asset or generated image -->
-                    <div class="image-glass">
-                        <i class="fas fa-dharmachakra"></i>
+        <!-- Book Showcase Section -->
+        <section id="book-showcase" class="book-showcase-section reveal">
+            <div class="container">
+                <div class="book-grid">
+                    <div class="book-image-column">
+                        <div class="book-cover-frame">
+                            <img src="valampuri-book.jpg" alt="Valampuri Tamil Panchangam 2026 Hardcover Book">
+                        </div>
+                    </div>
+
+                    <div class="book-details-column">
+                        <div class="badge-sacred">
+                            <i class="fas fa-award"></i>
+                            <span data-i18n="book_badge">Author's Master Publication</span>
+                        </div>
+                        <h2 data-i18n="book_title">Valampuri Tamil Panchangam 2026 Edition</h2>
+                        <p class="book-desc" data-i18n="book_desc">The authoritative Tamil Panchangam authored by Astrologer Vallal Paari under Chithode Navagraha Aaraaichiyaalar Sangam. Packed with 365-day Drigganitha calculations, Subha Muhurtham dates for marriage and housewarming, and ancestral astrological research insights.</p>
+
+                        <ul class="book-features-list">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="book_feat_1">Complete 365-day 5-Anga timing calculated with generational expertise</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="book_feat_2">Subha Muhurtham calendar for Marriage, Grihapravesam & auspicious functions</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="book_feat_3">Detailed Guru, Sani, Rahu-Ketu Peyarchi predictions & remedies</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="book_feat_4">Chithode Navagraha Sangam verified planetary transit tables</span></li>
+                        </ul>
+
+                        <div class="book-pricing-box">
+                            <div>
+                                <span style="font-size: 0.85rem; color: #abb2d4; display: block;">Price per Copy:</span>
+                                <span class="price-tag" data-i18n="book_price">₹350 / $15 USD</span>
+                            </div>
+                            <div class="shipping-note" data-i18n="book_shipping">Courier Delivery Across Tamil Nadu, India & Worldwide</div>
+                        </div>
+
+                        <div class="hero-cta-group">
+                            <a href="https://wa.me/919842100000?text=Vanakkam%20Astrologer%20Vallal%20Paari%20Ji,%20I%20would%20like%20to%20order%20the%20Valampuri%20Tamil%20Panchangam%202026%20Edition" target="_blank" class="btn-gold">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-i18n="btn_order_whatsapp">Order via WhatsApp</span>
+                            </a>
+                            <a href="guru.html#publications" class="btn-outline-gold">
+                                <i class="fas fa-list-check"></i>
+                                <span data-i18n="btn_preview_sample">Preview Book Index</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Services & Consultation Desk -->
+        <section class="services-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge-sacred" style="background: rgba(143, 23, 39, 0.1); color: var(--primary-crimson); border-color: rgba(143, 23, 39, 0.3);">
+                        <i class="fas fa-star-and-crescent"></i>
+                        Vedic Consultation & Sangam Services
+                    </div>
+                    <h2 data-i18n="services_title">Chithode Navagraha Sangam Astrological Services</h2>
+                    <p data-i18n="services_desc">Guidance from Astrologer Vallal Paari and the 3-generation research heritage.</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-question-circle"></i></div>
+                        <h3 data-i18n="service_1_title">Traditional Jothidam & Prasanna</h3>
+                        <p data-i18n="service_1_desc">Instant, razor-sharp cosmic solutions for marriage, business, child boon, health, and family prosperity.</p>
+                        <a href="https://wa.me/919842100000?text=Inquiry%20for%20Jothidam%20Consultation%20with%20Vallal%20Paari" target="_blank" class="btn-maroon" style="padding: 8px 18px; font-size: 0.86rem; align-self: flex-start;">
+                            <i class="fab fa-whatsapp"></i> Inquire Now
+                        </a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-chart-pie"></i></div>
+                        <h3 data-i18n="service_2_title">Horoscope (Jathagam) Drafting & Reading</h3>
+                        <p data-i18n="service_2_desc">Deep Dasa-Bhukti analysis and lifelong predictions calculated with generational precision.</p>
+                        <a href="https://wa.me/919842100000?text=Inquiry%20for%20Jathagam%20Drafting" target="_blank" class="btn-maroon" style="padding: 8px 18px; font-size: 0.86rem; align-self: flex-start;">
+                            <i class="fab fa-whatsapp"></i> Inquire Now
+                        </a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-bell"></i></div>
+                        <h3 data-i18n="service_3_title">Subha Muhurtham Fixing</h3>
+                        <p data-i18n="service_3_desc">Auspicious date and time fixing for Weddings, Housewarming (Grihapravesam), and business beginnings.</p>
+                        <a href="https://wa.me/919842100000?text=Inquiry%20for%20Subha%20Muhurtham%20Fixing" target="_blank" class="btn-maroon" style="padding: 8px 18px; font-size: 0.86rem; align-self: flex-start;">
+                            <i class="fab fa-whatsapp"></i> Inquire Now
+                        </a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-hands-praying"></i></div>
+                        <h3 data-i18n="service_4_title">Navagraha Dosha Pariharam Guidance</h3>
+                        <p data-i18n="service_4_desc">Authentic temple and planetary remedies curated by Chithode Navagraha Aaraaichiyaalar Sangam.</p>
+                        <a href="https://wa.me/919842100000?text=Inquiry%20for%20Navagraha%20Pariharam" target="_blank" class="btn-maroon" style="padding: 8px 18px; font-size: 0.86rem; align-self: flex-start;">
+                            <i class="fab fa-whatsapp"></i> Inquire Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3 data-i18n="footer_brand">VALAMPURI</h3>
-                    <p data-i18n="footer_desc">Guiding your journey through the cosmic dance of time.</p>
-                </div>
-                <div class="footer-links">
-                    <h4 data-i18n="footer_links_title">Quick Links</h4>
-                    <ul>
-                        <li><a href="#home" data-i18n="nav_home">Home</a></li>
-                        <li><a href="panchangam.html" data-i18n="nav_panchangam">Daily Panchangam</a></li>
-                        <li><a href="tools.html" data-i18n="nav_tools">Planetary Tools</a></li>
-                        <li><a href="guru.html" data-i18n="nav_guru">About Guru</a></li>
-                        <li><a href="about.html" data-i18n="nav_about">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4 data-i18n="footer_connect">Connect</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    <h3>VALAMPURI <span>PANCHANGAM</span></h3>
+                    <p data-i18n="footer_about">Valampuri Panchangam is authored by Astrologer Vallal Paari, carrying the 50-year legacy of Moola Guru Maguleeswaran Ayya and Chithode Navagraha Aaraaichiyaalar Sangam.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
+
+                <div class="footer-links">
+                    <h4 data-i18n="footer_quick_links">Sacred Navigation</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="panchangam.html" data-i18n="nav_panchangam">Daily Panchangam</a></li>
+                        <li><a href="tools.html" data-i18n="nav_tools">Planetary Tools</a></li>
+                        <li><a href="guru.html" data-i18n="nav_guru">Guru Parampara</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Sangam</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 data-i18n="footer_contact_info">Sangam & Author Desk</h4>
+                    <p><i class="fas fa-location-dot"></i> <span data-i18n="footer_address">Chithode Navagraha Aaraaichiyaalar Sangam, Chithode, Erode District, Tamil Nadu, India</span></p>
+                    <p><i class="fas fa-phone"></i> +91 98421 XXXXX / +91 94430 XXXXX</p>
+                    <p><i class="fas fa-envelope"></i> contact@valampuripanchangam.org</p>
+                </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2026 Valampuri Panchangam. All rights reserved.</p>
+                <p data-i18n="footer_rights">© 2026 Valampuri Panchangam. All Rights Reserved. Authored by Astrologer Vallal Paari | Chithode Navagraha Aaraaichiyaalar Sangam.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Announcement Popup -->
     <div class="popup-overlay" id="popupOverlay">
-        <div class="popup-content">
-            <span class="popup-close" id="popupClose">&times;</span>
-            <h2 class="popup-title" data-i18n="popup_title">முக்கிய அறிவிப்பு</h2>
-            <p class="popup-text" data-i18n="popup_text">வலம்புரி பஞ்சாங்கம் 2026 வெளியீடு</p>
-            <a href="#" class="popup-btn" id="popupBtn" data-i18n="popup_btn">மேலும் அறிய</a>
+        <div class="popup-card-content">
+            <span class="popup-close-btn" id="popupClose">&times;</span>
+            <div class="anga-icon-wrap" style="width: 55px; height: 55px; font-size: 1.3rem; margin-bottom: 14px;">
+                <i class="fas fa-book-sparkles"></i>
+            </div>
+            <h3 style="color: var(--primary-dark); margin-bottom: 10px; font-size: 1.35rem;">வலம்புரி பஞ்சாங்கம் 2026 வெளியீடு</h3>
+            <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 20px; line-height: 1.6;">
+                சித்தோடு நவகிரக ஆராய்ச்சியாளர் சங்கம் சார்பில், 3-ஆம் தலைமுறை ஜோதிடர் வள்ளல் பாரி அவர்கள் தொகுத்த 2026 தமிழ் பஞ்சாங்கம் அச்சுப் பதிப்பு முன்பதிவு நடைபெறுகிறது.
+            </p>
+            <a href="https://wa.me/919842100000?text=Pre-order%20Valampuri%20Panchangam%202026%20from%20Vallal%20Paari" target="_blank" class="btn-gold" style="width: 100%; justify-content: center;">
+                <i class="fab fa-whatsapp"></i> முன்பதிவு செய்ய / Pre-Order
+            </a>
         </div>
     </div>
 
+    <!-- Scripts -->
     <script src="cursor.js" defer></script>
+    <script src="panchangam-engine.js"></script>
     <script>
-        // Popup Logic
-        const popupOverlay = document.getElementById('popupOverlay');
+        function updateLiveTime() {
+            const now = new Date();
+            const timeStr = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
+            const dateStr = now.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+            const ticker = document.getElementById('liveTimeTicker');
+            if (ticker) {
+                ticker.textContent = `IST: ${dateStr} • ${timeStr}`;
+            }
+        }
+        setInterval(updateLiveTime, 1000);
+        updateLiveTime();
+
+        function renderLiveSnapshot() {
+            const p = ValampuriEngine.calculatePanchangam(new Date());
+            const lang = localStorage.getItem('valampuri_lang') || 'en';
+            
+            document.getElementById('snapDateBadge').textContent = lang === 'ta' ? p.formattedDateTa : p.formattedDateEn;
+            document.getElementById('snapThithi').textContent = lang === 'ta' ? p.tithi.ta : p.tithi.en;
+            document.getElementById('snapPaksham').textContent = lang === 'ta' ? p.paksham.ta : p.paksham.en;
+            document.getElementById('snapNakshatra').textContent = lang === 'ta' ? p.nakshatra.ta : p.nakshatra.en;
+            document.getElementById('snapPadam').textContent = `${lang === 'ta' ? 'பாதம்' : 'Padam'} ${p.nakshatra.padam}`;
+            document.getElementById('snapNallaNeram').textContent = p.nallaNeram;
+            document.getElementById('snapRahu').textContent = p.rahuKaalam;
+            document.getElementById('snapChandrashtamam').textContent = `${p.chandrashtamam.icon} ${lang === 'ta' ? p.chandrashtamam.ta : p.chandrashtamam.en}`;
+            document.getElementById('snapGowri').textContent = p.gowriDay;
+        }
+
+        window.addEventListener('DOMContentLoaded', renderLiveSnapshot);
+        window.addEventListener('valampuri_lang_changed', renderLiveSnapshot);
+
+        const popup = document.getElementById('popupOverlay');
         const popupClose = document.getElementById('popupClose');
-        const popupBtn = document.getElementById('popupBtn');
-
-        function showPopup() {
-            // Check if shown this session
-            if (!sessionStorage.getItem('valampuri_popup_shown')) {
-                setTimeout(() => {
-                    popupOverlay.classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                }, 1000);
-            }
+        if (!sessionStorage.getItem('valampuri_2026_popup')) {
+            setTimeout(() => {
+                if (popup) popup.classList.add('active');
+            }, 1800);
         }
-
-        function closePopup() {
-            popupOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-            sessionStorage.setItem('valampuri_popup_shown', 'true');
+        if (popupClose) {
+            popupClose.addEventListener('click', () => {
+                popup.classList.remove('active');
+                sessionStorage.setItem('valampuri_2026_popup', 'true');
+            });
         }
-
-        popupClose.addEventListener('click', closePopup);
-        popupBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            closePopup();
-        });
-
-        popupOverlay.addEventListener('click', (e) => {
-            if (e.target === popupOverlay) closePopup();
-        });
-
-        // Initialize Popup
-        window.addEventListener('load', showPopup);
-
-        const translations = {
-            en: {
-                nav_home: "Home",
-                nav_features: "Features",
-                nav_tools: "Planetary Tools",
-                nav_guru: "About Guru",
-                nav_about: "About",
-                nav_panchangam: "Daily Panchangam",
-                hero_badge: "Daily Planetary Guidance",
-                hero_title: "Precision in Every <span class='highlight'>Moment</span>",
-                hero_desc: "Unlock the spiritual power of time with Valampuri Panchangam. Your definitive guide to daily cosmic alignment and prosperity.",
-                btn_panchangam: "View Panchangam",
-                btn_learn: "Learn More",
-                features_title: "Core Components",
-                features_desc: "Experience the traditional wisdom of the 5 limbs of time, calculated with modern precision.",
-                tithi: "Tithi",
-                tithi_desc: "Lunar day information to guide your spiritual practices and rituals.",
-                vara: "Vara",
-                vara_desc: "Specific day of the week influences and their impact on your activities.",
-                nakshatra: "Nakshatra",
-                nakshatra_desc: "Detailed analysis of the lunar mansion for personalized guidance.",
-                yoga: "Yoga",
-                yoga_desc: "Auspicious associations of Tithi and Nakshatra for success.",
-                karana: "Karana",
-                karana_desc: "The half-day duration that dictates the energetic flow of actions.",
-                about_title: "Why Valampuri?",
-                about_desc: "Valampuri Panchangam isn't just a calendar; it's a spiritual compass. We combine centuries-old astronomical data with simplified, actionable insights for the modern seeker.",
-                about_point1: "High-precision calculations",
-                about_point2: "User-friendly daily guidance",
-                about_point3: "Customized for spiritual growth",
-                release_title: "The Grand Release",
-                release_desc: "Join the thousands waiting for the most accurate Panchangam of 2026.",
-                release_date: "Coming to you in Spring 2026",
-                notify_placeholder: "Enter your email for early access",
-                btn_notify: "Notify Me",
-                footer_brand: "VALAMPURI",
-                footer_desc: "Guiding your journey through the cosmic dance of time.",
-                footer_links_title: "Quick Links",
-                footer_connect: "Connect",
-                popup_title: "Exciting Announcement",
-                popup_text: "Valampuri Panchangam Release 2026",
-                popup_btn: "Stay Notified"
-            },
-            ta: {
-                nav_home: "முகப்பு",
-                nav_features: "அம்சங்கள்",
-                nav_panchangam: "நித்ய பஞ்சாங்கம்",
-                nav_tools: "கோள் கருவிகள்",
-                nav_guru: "குருவைப் பற்றி",
-                nav_about: "எங்களைப் பற்றி",
-                hero_badge: "தினசரி கோள் வழிகாட்டுதல்",
-                hero_title: "ஒவ்வொரு <span class='highlight'>நொடியும்</span> துல்லியம்",
-                hero_desc: "வலம்புரி பஞ்சாங்கத்தின் மூலம் காலத்தின் ஆன்மீக சக்தியைத் திறக்கவும். தினசரி பிரபஞ்ச சீரமைப்பு மற்றும் செழுமைக்கான உங்களுக்கான வழிகாட்டி.",
-                btn_panchangam: "பஞ்சாங்கம் பார்க்க",
-                btn_learn: "மேலும் அறிக",
-                features_title: "முக்கிய கூறுகள்",
-                features_desc: "காலத்தின் 5 அங்கங்களின் பாரம்பரிய ஞானத்தை நவீன துல்லியத்துடன் அனுபவிக்கவும்.",
-                tithi: "திதி",
-                tithi_desc: "உங்கள் ஆன்மீக நடைமுறைகள் மற்றும் சடங்குகளை வழிநடத்த சந்திர நாள் தகவல்.",
-                vara: "வார",
-                vara_desc: "வாரத்தின் குறிப்பிட்ட நாள் தாக்கங்கள் மற்றும் உங்கள் செயல்பாடுகளில் அவற்றின் தாக்கம்.",
-                nakshatra: "நட்சத்திரம்",
-                nakshatra_desc: "தனிப்பயனாக்கப்பட்ட வழிகாட்டுதலுக்காக சந்திர மாளிகையின் விரிவான பகுப்பாய்வு.",
-                yoga: "யோகம்",
-                yoga_desc: "வெற்றிக்கான திதி மற்றும் நட்சத்திரத்தின் மங்களகரமான சேர்க்கைகள்.",
-                karana: "கரணம்",
-                karana_desc: "செயல்களின் ஆற்றல் ஓட்டத்தை ஆணையிடும் அரை நாள் காலம்.",
-                about_title: "ஏன் வலம்புரி?",
-                about_desc: "வலம்புரி பஞ்சாங்கம் என்பது ஒரு காலண்டர் மட்டுமல்ல; அது ஒரு ஆன்மீக திசைகாட்டி. நவீன தேடுபவருக்கான எளிய மற்றும் செயல்பாட்டு நுண்ணறிவுடன் பல நூற்றாண்டுகள் பழமையான வானியல் தரவை நாங்கள் இணைக்கிறோம்.",
-                about_point1: "உயர் துல்லியமான கணக்கீடுகள்",
-                about_point2: "பயன்படுத்த எளிதான தினசரி வழிகாட்டுதல்",
-                about_point3: "ஆன்மீக வளர்ச்சிக்காக வடிவமைக்கப்பட்டது",
-                release_title: "பெரிய வெளியீடு",
-                release_desc: "2026-ன் மிகவும் துல்லியமான பஞ்சாங்கத்திற்காகக் காத்திருக்கும் ஆயிரக்கணக்கானோருடன் சேருங்கள்.",
-                release_date: "2026 வசந்த காலத்தில் உங்களிடம் வருகிறது",
-                notify_placeholder: "முன்கூட்டியே அணுக உங்கள் மின்னஞ்சலை உள்ளிடவும்",
-                btn_notify: "எனக்கு அறிவிக்கவும்",
-                footer_brand: "வலம்புரி",
-                footer_desc: "காலத்தின் பிரபஞ்ச நடனத்தின் மூலம் உங்கள் பயணத்தை வழிநடத்துகிறது.",
-                footer_links_title: "விரைவான இணைப்புகள்",
-                footer_connect: "இணைக்கவும்",
-                popup_title: "உற்சாகமான அறிவிப்பு",
-                popup_text: "வலம்புரி பஞ்சாங்கம் 2026 வெளியீடு",
-                popup_btn: "தொடர்ந்து இணைந்திருக்க"
-            }
-        };
-
-
-        const langToggle = document.querySelector('#langToggle');
-        const langOpts = document.querySelectorAll('.lang-opt');
-
-        function updateLanguage(lang) {
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[lang] && translations[lang][key]) {
-                    el.innerHTML = translations[lang][key];
+        if (popup) {
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    popup.classList.remove('active');
+                    sessionStorage.setItem('valampuri_2026_popup', 'true');
                 }
             });
-
-            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-                const key = el.getAttribute('data-i18n-placeholder');
-                if (translations[lang] && translations[lang][key]) {
-                    el.placeholder = translations[lang][key];
-                }
-            });
-
-            // Update Toggle UI
-            langToggle.classList.toggle('active', lang === 'ta');
-            langOpts.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
-
-            localStorage.setItem('valampuri_lang', lang);
         }
-
-        langToggle.addEventListener('click', () => {
-            const currentLang = localStorage.getItem('valampuri_lang') || 'en';
-            const nextLang = currentLang === 'en' ? 'ta' : 'en';
-            updateLanguage(nextLang);
-        });
-
-        // Initialize Language
-        const savedLang = localStorage.getItem('valampuri_lang') || 'en';
-        updateLanguage(savedLang);
-
-        // Mobile Menu Toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
-        // Scroll Reveal Observer
-        const observerOptions = {
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-        // Smooth Scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    navLinks.classList.remove('active');
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
     </script>
 </body>
 
